@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.nexora.de/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.nexora.de/leistungen.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.nexora.de/leistungen/webseiten.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nexora.de/leistungen/onlineshops.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nexora.de/leistungen/softwareentwicklung.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nexora.de/leistungen/corporate-design.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nexora.de/leistungen/printdesign.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nexora.de/leistungen/seo.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nexora.de/leistungen/hosting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nexora.de/leistungen/wartung.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nexora.de/leistungen/ki-loesungen.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nexora.de/portfolio.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.nexora.de/portfolio/meisterbau.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.nexora.de/portfolio/trattoria-sole.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.nexora.de/portfolio/dentalplus.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.nexora.de/ueber-uns.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.nexora.de/preise.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.nexora.de/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.nexora.de/blog/warum-ladezeit-wichtig.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.nexora.de/blog/lokales-seo-guide.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.nexora.de/blog/ki-im-mittelstand.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.nexora.de/faq.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.nexora.de/kontakt.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+</urlset>

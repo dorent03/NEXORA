@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="de" class="no-js" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt — Nexora Digitalagentur</title>
+  <meta name="description" content="Kontaktiere Nexora für dein digitales Projekt. Kostenloses Erstgespräch, schnelle Antwort. Telefon, E-Mail, Kontaktformular und Standort München.">
+  <link rel="canonical" href="https://www.nexora.de/kontakt.html">
+  <meta name="theme-color" content="#2563EB">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kontakt — Nexora Digitalagentur">
+  <meta property="og:description" content="Lass uns über dein Projekt sprechen – kostenlos und unverbindlich.">
+  <meta property="og:image" content="https://www.nexora.de/assets/img/brand-guide.png">
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/design-system.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="assets/js/components.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="kontakt" data-base="" data-year="2026">
+  <div id="site-nav"></div>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="page-header__aurora"></div>
+      <div class="container">
+        <nav class="breadcrumb"><a href="index.html">Start</a><span class="sep">/</span><span>Kontakt</span></nav>
+        <span class="eyebrow eyebrow--centered" style="margin-top:var(--space-4)">Kontakt</span>
+        <h1>Lass uns über dein<br>Projekt sprechen</h1>
+        <p class="lead">Erzähl uns kurz, was du vorhast. Wir melden uns in der Regel innerhalb von 24 Stunden – mit einer ehrlichen Einschätzung und den nächsten Schritten.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Form -->
+          <div data-reveal>
+            <h2>Schreib uns</h2>
+            <p class="text-muted" style="margin:var(--space-3) 0 var(--space-6)">Alle mit <span style="color:var(--brand-primary)">*</span> markierten Felder sind Pflichtfelder.</p>
+
+            <form data-demo-form novalidate>
+              <div class="form-success" id="formSuccess">
+                <i data-lucide="check-circle-2" class="icon" style="color:var(--brand-secondary)"></i>
+                <span>Vielen Dank! Deine Nachricht ist bei uns eingegangen. Wir melden uns schnellstmöglich bei dir.</span>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="name">Name <span class="req">*</span></label>
+                  <input class="input" type="text" id="name" name="name" placeholder="Max Mustermann" required autocomplete="name">
+                </div>
+                <div class="field">
+                  <label for="company">Unternehmen</label>
+                  <input class="input" type="text" id="company" name="company" placeholder="Musterfirma GmbH" autocomplete="organization">
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="email">E-Mail <span class="req">*</span></label>
+                  <input class="input" type="email" id="email" name="email" placeholder="max@beispiel.de" required autocomplete="email">
+                </div>
+                <div class="field">
+                  <label for="phone">Telefon</label>
+                  <input class="input" type="tel" id="phone" name="phone" placeholder="+49 …" autocomplete="tel">
+                </div>
+              </div>
+              <div class="field">
+                <label for="topic">Worum geht es? <span class="req">*</span></label>
+                <select class="select" id="topic" name="topic" required>
+                  <option value="">Bitte auswählen …</option>
+                  <option>Webseite</option>
+                  <option>Onlineshop</option>
+                  <option>Softwareentwicklung</option>
+                  <option>Corporate Design</option>
+                  <option>Printdesign</option>
+                  <option>SEO &amp; Sichtbarkeit</option>
+                  <option>Hosting &amp; Wartung</option>
+                  <option>KI-Lösungen</option>
+                  <option>Sonstiges</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">Deine Nachricht <span class="req">*</span></label>
+                <textarea class="textarea" id="message" name="message" placeholder="Erzähl uns von deinem Projekt, deinen Zielen und deinem ungefähren Zeitrahmen …" required></textarea>
+              </div>
+              <div class="field">
+                <label class="checkbox">
+                  <input type="checkbox" name="privacy" required>
+                  <span>Ich habe die <a href="datenschutz.html" style="color:var(--brand-primary)">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. <span class="req">*</span></span>
+                </label>
+              </div>
+              <button class="btn btn--primary btn--lg btn--block" type="submit">Nachricht senden <i data-lucide="send" class="icon"></i></button>
+            </form>
+          </div>
+
+          <!-- Info -->
+          <div data-reveal data-reveal-delay="1">
+            <h2>Direkter Draht</h2>
+            <p class="text-muted" style="margin:var(--space-3) 0 var(--space-6)">Lieber persönlich? Ruf uns an oder schreib eine E-Mail – wir freuen uns auf dich.</p>
+            <div class="contact-info">
+              <a class="contact-item" href="tel:+4989123456789">
+                <span class="icon-wrap"><i data-lucide="phone" class="icon"></i></span>
+                <span><h4>Telefon</h4><p>+49 89 123 456 789</p></span>
+              </a>
+              <a class="contact-item" href="mailto:hallo@nexora.de">
+                <span class="icon-wrap"><i data-lucide="mail" class="icon"></i></span>
+                <span><h4>E-Mail</h4><p>hallo@nexora.de</p></span>
+              </a>
+              <div class="contact-item">
+                <span class="icon-wrap"><i data-lucide="map-pin" class="icon"></i></span>
+                <span><h4>Adresse</h4><p>Maximilianstraße 12<br>80539 München</p></span>
+              </div>
+              <div class="contact-item">
+                <span class="icon-wrap"><i data-lucide="clock" class="icon"></i></span>
+                <span><h4>Erreichbarkeit</h4><p>Mo–Fr, 9:00–18:00 Uhr</p></span>
+              </div>
+            </div>
+
+            <div class="map-frame mt-6">
+              <iframe
+                title="Standort Nexora in München"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=11.575%2C48.137%2C11.587%2C48.143&amp;layer=mapnik&amp;marker=48.140%2C11.581"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <h2>Lieber direkt loslegen?</h2>
+          <p>Sieh dir unsere Pakete an oder entdecke, was wir für andere Unternehmen umgesetzt haben.</p>
+          <div class="hero__cta">
+            <a class="btn btn--light btn--lg" href="preise.html">Preise ansehen</a>
+            <a class="btn btn--ghost btn--lg" href="portfolio.html" style="color:#fff">Portfolio entdecken <i data-lucide="arrow-right" class="icon arrow"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>
