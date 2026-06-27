@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Nexora</title>
+    <meta name="description" content="Ausgewählte Projekte von Nexora: Webseiten, Onlineshops, Branding und Software für KMU, Handwerk, Gastronomie und Praxen. Echte Ergebnisse aus der Region." />
+    <meta name="theme-color" content="#0F172A" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="portfolio">
+    <div id="site-header"></div>
+
+    <main id="main">
+      <!-- ========================== PAGE HERO ========================= -->
+      <section class="page-hero">
+        <span class="blob blob-primary"></span>
+        <div class="container page-hero-inner">
+          <nav class="breadcrumb" aria-label="Brotkrümelnavigation">
+            <a href="index.html">Home</a><span>/</span><span>Portfolio</span>
+          </nav>
+          <span class="eyebrow" data-reveal>Portfolio</span>
+          <h1 data-reveal data-delay="1">Ausgewählte Projekte</h1>
+          <p class="lead" data-reveal data-delay="2">
+            Ein Auszug aus unserer Arbeit: Webseiten, Onlineshops, Marken und Software,
+            die für unsere Kunden messbar Ergebnisse liefern. Jedes Projekt entsteht
+            individuell – von der ersten Idee bis zum erfolgreichen Launch.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========================== PROJEKTE ========================== -->
+      <section class="section" style="padding-top: 0;">
+        <div class="container">
+          <div class="filters" data-reveal>
+            <button class="chip active" data-filter="all" type="button">Alle</button>
+            <button class="chip" data-filter="web" type="button">Webseiten</button>
+            <button class="chip" data-filter="shop" type="button">Onlineshops</button>
+            <button class="chip" data-filter="branding" type="button">Branding</button>
+            <button class="chip" data-filter="software" type="button">Software</button>
+          </div>
+
+          <div class="grid grid-3">
+            <a class="work-card" href="projekt.html" data-category="web" data-reveal>
+              <div class="work-media" style="background: linear-gradient(135deg,#2563eb,#06b6d4);"><span class="ph">Meisterbau</span></div>
+              <div class="work-body">
+                <span class="work-tag">Webseite</span>
+                <h3>Meisterbau Handwerk</h3>
+                <p>Moderne Unternehmensseite mit Online-Angebotsanfrage. Ergebnis: +60 % qualifizierte Anfragen in sechs Monaten.</p>
+              </div>
+            </a>
+
+            <a class="work-card" href="projekt.html" data-category="branding" data-reveal data-delay="1">
+              <div class="work-media" style="background: linear-gradient(135deg,#06b6d4,#38bdf8);"><span class="ph">Café Lumen</span></div>
+              <div class="work-body">
+                <span class="work-tag">Branding</span>
+                <h3>Café Lumen</h3>
+                <p>Komplettes Corporate Design inklusive Logo, Speisekarte und Social-Media-Vorlagen für einen einheitlichen Markenauftritt.</p>
+              </div>
+            </a>
+
+            <a class="work-card" href="projekt.html" data-category="shop" data-reveal data-delay="2">
+              <div class="work-media" style="background: linear-gradient(135deg,#1e3a8a,#2563eb);"><span class="ph">DentalPlus</span></div>
+              <div class="work-body">
+                <span class="work-tag">Onlineshop</span>
+                <h3>DentalPlus Store</h3>
+                <p>B2B-Shop mit Kundenkonten, schnellem Checkout und ERP-Anbindung. 30 % höherer durchschnittlicher Bestellwert.</p>
+              </div>
+            </a>
+
+            <a class="work-card" href="projekt.html" data-category="software" data-reveal>
+              <div class="work-media" style="background: linear-gradient(135deg,#1e3a8a,#38bdf8);"><span class="ph">NordTech</span></div>
+              <div class="work-body">
+                <span class="work-tag">Software</span>
+                <h3>NordTech Portal</h3>
+                <p>Individuelles Kundenportal mit Rollenverwaltung und Self-Service. Spart dem Support-Team rund 15 Stunden pro Woche.</p>
+              </div>
+            </a>
+
+            <a class="work-card" href="projekt.html" data-category="web" data-reveal data-delay="1">
+              <div class="work-media" style="background: linear-gradient(135deg,#2563eb,#1e3a8a);"><span class="ph">GrünRaum</span></div>
+              <div class="work-body">
+                <span class="work-tag">Webseite</span>
+                <h3>GrünRaum Gartenbau</h3>
+                <p>Bildstarke Webseite mit Projektgalerie und Standortseiten. Top-3-Rankings für lokale Suchbegriffe innerhalb von vier Monaten.</p>
+              </div>
+            </a>
+
+            <a class="work-card" href="projekt.html" data-category="web" data-reveal data-delay="2">
+              <div class="work-media" style="background: linear-gradient(135deg,#06b6d4,#2563eb);"><span class="ph">Studio Vita</span></div>
+              <div class="work-body">
+                <span class="work-tag">Webseite</span>
+                <h3>Studio Vita Praxis</h3>
+                <p>Praxis-Website mit Online-Terminbuchung und barrierearmer Bedienung. Spürbar weniger Telefonaufkommen an der Rezeption.</p>
+              </div>
+            </a>
+
+            <a class="work-card" href="projekt.html" data-category="branding" data-reveal>
+              <div class="work-media" style="background: linear-gradient(135deg,#38bdf8,#1e3a8a);"><span class="ph">Sonnenkorn</span></div>
+              <div class="work-body">
+                <span class="work-tag">Branding</span>
+                <h3>Bäckerei Sonnenkorn</h3>
+                <p>Warmherzige Markenidentität mit Logo, Verpackungsdesign und Filialbeschilderung. Ein Auftritt mit Wiedererkennungswert.</p>
+              </div>
+            </a>
+
+            <a class="work-card" href="projekt.html" data-category="shop" data-reveal data-delay="1">
+              <div class="work-media" style="background: linear-gradient(135deg,#2563eb,#38bdf8);"><span class="ph">FahrradFuchs</span></div>
+              <div class="work-body">
+                <span class="work-tag">Onlineshop</span>
+                <h3>FahrradFuchs Shop</h3>
+                <p>Performance-optimierter Shop mit Filtern, Konfigurator und Click & Collect. Conversion-Rate um 42 % gesteigert.</p>
+              </div>
+            </a>
+
+            <a class="work-card" href="projekt.html" data-category="software" data-reveal data-delay="2">
+              <div class="work-media" style="background: linear-gradient(135deg,#1e3a8a,#06b6d4);"><span class="ph">LogiTrack</span></div>
+              <div class="work-body">
+                <span class="work-tag">Software</span>
+                <h3>LogiTrack Dashboard</h3>
+                <p>Echtzeit-Dashboard für Logistik mit Live-Tracking und Reporting. Volle Transparenz über alle Lieferungen auf einen Blick.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ CTA ============================ -->
+      <section class="section" style="padding-top: 0;">
+        <div class="container">
+          <div class="cta-band" data-reveal="scale">
+            <h2>Wird Ihr Projekt das nächste hier?</h2>
+            <p>Erzählen Sie uns von Ihrem Vorhaben. Im kostenlosen Erstgespräch zeigen wir Ihnen konkrete Möglichkeiten – unverbindlich und ehrlich.</p>
+            <div class="hero-cta">
+              <a class="btn btn-light btn-lg" href="kontakt.html">Projekt starten</a>
+              <a class="btn btn-light btn-lg" href="preise.html">Preise ansehen</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

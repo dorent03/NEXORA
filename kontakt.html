@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – Nexora</title>
+  <meta name="description" content="Nehmen Sie Kontakt mit Nexora auf. Per E-Mail, Telefon oder über unser Kontaktformular. Wir freuen uns auf Ihr Projekt." />
+  <meta name="theme-color" content="#0F172A" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="kontakt">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <!-- ============================ PAGE HERO ============================ -->
+    <section class="page-hero">
+      <span class="blob blob-primary"></span>
+      <div class="container page-hero-inner">
+        <div class="breadcrumb" data-reveal>
+          <a href="index.html">Home</a><span>/</span><span>Kontakt</span>
+        </div>
+        <span class="eyebrow" data-reveal data-delay="1">Kontakt</span>
+        <h1 data-reveal data-delay="2">Lassen Sie uns sprechen</h1>
+        <p class="lead" data-reveal data-delay="3">
+          Ob konkrete Anfrage oder erste Idee – wir freuen uns darauf, von Ihnen zu hören.
+          Schreiben Sie uns oder rufen Sie an. Wir melden uns garantiert zurück.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================ KONTAKT SPLIT ============================ -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="split">
+          <!-- LINKS: Kontaktinfos -->
+          <div data-reveal="left">
+            <h2>Direkter Draht</h2>
+            <p class="mt-1" style="margin-bottom: 2rem;">
+              Sie erreichen uns Montag bis Freitag während der Geschäftszeiten.
+              Für ein unverbindliches Erstgespräch nutzen Sie am besten das Formular.
+            </p>
+
+            <div class="contact-item">
+              <span class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+              <div>
+                <strong>E-Mail</strong>
+                <a href="mailto:hallo@nexora.de">hallo@nexora.de</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+              <div>
+                <strong>Telefon</strong>
+                <a href="tel:+4915112345678">+49 151 123 456 78</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div>
+                <strong>Adresse</strong>
+                <p>Musterstraße 12<br />50667 Köln</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+              <div>
+                <strong>Öffnungszeiten</strong>
+                <p>Mo–Fr 9–18 Uhr</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RECHTS: Formular -->
+          <div data-reveal="right">
+            <form id="contact-form" class="form-grid" novalidate>
+              <div class="field-row">
+                <div class="field">
+                  <label for="name">Name *</label>
+                  <input type="text" id="name" name="name" autocomplete="name" required />
+                </div>
+                <div class="field">
+                  <label for="email">E-Mail *</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" />
+              </div>
+
+              <div class="field">
+                <label for="subject">Betreff</label>
+                <select id="subject" name="subject">
+                  <option value="" selected>Leistung wählen</option>
+                  <option value="webseite">Webseite</option>
+                  <option value="onlineshop">Onlineshop</option>
+                  <option value="software">Software</option>
+                  <option value="design">Design</option>
+                  <option value="seo">SEO</option>
+                  <option value="sonstiges">Sonstiges</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Nachricht *</label>
+                <textarea id="message" name="message" placeholder="Erzählen Sie uns von Ihrem Projekt …" required></textarea>
+              </div>
+
+              <label class="checkbox">
+                <input type="checkbox" id="privacy" name="privacy" required />
+                <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *</span>
+              </label>
+
+              <button type="submit" class="btn btn-primary">Nachricht senden
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+
+              <p class="form-note">* Pflichtfelder. Wir behandeln Ihre Angaben vertraulich.</p>
+
+              <div class="form-success" id="form-success">✓ Vielen Dank! Ihre Nachricht ist bei uns eingegangen. Wir melden uns schnellstmöglich bei Ihnen.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ MAPS ============================ -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="map-embed" data-reveal>
+          <iframe src="https://www.google.com/maps?q=K%C3%B6ln&output=embed" loading="lazy" title="Standort Nexora auf Google Maps"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
