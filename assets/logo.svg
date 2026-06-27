@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nexora Logo">
+  <defs>
+    <linearGradient id="nx-a" x1="8" y1="56" x2="56" y2="8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06B6D4"/>
+      <stop offset="0.5" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="nx-b" x1="24" y1="12" x2="40" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <!-- left bar -->
+  <rect x="11" y="11" width="11" height="42" rx="3" fill="url(#nx-a)"/>
+  <!-- right bar -->
+  <rect x="42" y="11" width="11" height="42" rx="3" fill="url(#nx-a)"/>
+  <!-- diagonal ribbon -->
+  <path d="M22 11 L33 11 L53 53 L42 53 Z" fill="url(#nx-b)"/>
+</svg>
