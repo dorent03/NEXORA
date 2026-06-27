@@ -1,87 +1,109 @@
-# Nexora – Digitalagentur Website
+# Nexora — Digitalagentur Website
 
-Produktionsreife, mehrseitige Website der Digitalagentur **Nexora**. Gebaut mit
-reinem **HTML, CSS und JavaScript** – kein Build-Schritt, keine Abhängigkeiten,
-sofort einsatzbereit.
+Produktionsreife, mehrseitige Website für die Digitalagentur **Nexora** – umgesetzt
+mit **reinem HTML, CSS und JavaScript** (kein Build-Schritt nötig).
 
 ## Highlights
 
-- ⚡ **Reine Web-Standards** – HTML5, modernes CSS, Vanilla JS (kein Framework, kein Bundler)
-- 🎨 **Premium Design System** – Design-Tokens, Glassmorphism, weiche Schatten, Farbverläufe
-- 🌙 **Dark Mode** – automatisch nach Systemeinstellung + manueller Umschalter (gespeichert)
-- 📱 **Mobile First & vollständig responsive** – Sticky Navbar, Mega-Menü, mobiles Menü
-- ✨ **Mikroanimationen** – Scroll-Reveal, Counter, Parallax, Hover-Effekte (IntersectionObserver)
-- ♿ **Accessibility** – semantisches Markup, Fokuszustände, Skip-Link, ARIA, reduced-motion
-- 🔍 **SEO-optimiert** – Meta-Tags, Open Graph, sprechende Titel, sitemap.xml & robots.txt
+- Premium-, minimalistisches Design im Stil von Apple, Stripe, Linear & Vercel
+- **Dark Mode** mit Umschalter (Einstellung wird gespeichert)
+- Sticky Navbar mit **Mega-Menü** für Leistungen, mobiles Menü, aktiver Menüpunkt
+- Mikro-Animationen, **Scroll-Reveal**, Parallax, Zähler, sanfte Hover-Effekte (GSAP optional)
+- Vollständig **responsive / Mobile First**
+- SEO-optimiert (Meta-Tags, Open Graph, JSON-LD, `sitemap.xml`, `robots.txt`)
+- Barrierearm: Skip-Link, Fokus-Stile, ARIA, `prefers-reduced-motion`
+- Eigenes **N-Logo**, **Favicon** und **Design System**
 
-## Seitenstruktur
-
-| Seite | Datei |
-|-------|-------|
-| Home | `index.html` |
-| Leistungen (9 Bereiche) | `leistungen.html` |
-| Portfolio | `portfolio.html` |
-| Projekt-Detail | `projekt.html` |
-| Über uns | `ueber-uns.html` |
-| Preise | `preise.html` |
-| Blog Übersicht | `blog.html` |
-| Blog Artikel | `blog-artikel.html` |
-| FAQ | `faq.html` |
-| Kontakt | `kontakt.html` |
-| Impressum | `impressum.html` |
-| Datenschutz | `datenschutz.html` |
-| 404 | `404.html` |
-
-## Projektaufbau
+## Projektstruktur
 
 ```
-NEXORA/
-├── index.html              # Startseite
-├── *.html                  # weitere Seiten
-├── css/
-│   └── style.css           # komplettes Design-System
-├── js/
-│   └── main.js             # Header/Footer-Injektion + Interaktionen
+.
+├── index.html                  # Home
+├── leistungen.html             # Leistungsübersicht
+├── leistungen/                 # 9 Leistungs-Unterseiten
+│   ├── webseiten.html
+│   ├── onlineshops.html
+│   ├── softwareentwicklung.html
+│   ├── corporate-design.html
+│   ├── printdesign.html
+│   ├── seo.html
+│   ├── hosting.html
+│   ├── wartung.html
+│   └── ki-loesungen.html
+├── portfolio.html              # Projektübersicht (mit Filter)
+├── portfolio/                  # Projekt-Detailseiten
+│   ├── meisterbau.html
+│   ├── trattoria-sole.html
+│   └── dentalplus.html
+├── ueber-uns.html
+├── preise.html
+├── blog.html
+├── blog/                       # Blog-Artikel
+│   ├── warum-ladezeit-wichtig.html
+│   ├── lokales-seo-guide.html
+│   └── ki-im-mittelstand.html
+├── faq.html
+├── kontakt.html                # Formular + Kontaktdaten + Karte
+├── impressum.html
+├── datenschutz.html
+├── 404.html
+├── styleguide.html             # Design System / Komponentenbibliothek
+├── robots.txt
+├── sitemap.xml
 └── assets/
-    ├── logo.svg            # N-Logo (Verlauf)
-    ├── favicon.svg         # Favicon
-    └── images/team/        # Teamfotos
+    ├── css/
+    │   ├── design-system.css   # Tokens, Reset, Themes, Typografie
+    │   ├── components.css       # Buttons, Karten, Navbar, Footer, Formulare
+    │   └── main.css            # Seiten-Patterns (Hero, Pricing, Blog …)
+    ├── js/
+    │   ├── components.js        # Navbar/Mega-Menü/Footer-Injektion, Theme, Scroll
+    │   └── main.js             # Scroll-Reveal, Zähler, Akkordeon, Filter, Formular
+    └── img/                     # Logo, Favicon, Bilder
 ```
 
-Header und Footer werden zentral in `js/main.js` gepflegt und auf jeder Seite
-in `<div id="site-header">` bzw. `<div id="site-footer">` eingefügt – so bleibt
-die Navigation überall konsistent.
+## Architektur
+
+Navbar (inkl. Mega-Menü & Mobile-Menü) und Footer werden über `assets/js/components.js`
+zentral in `#site-nav` bzw. `#site-footer` eingefügt. Dadurch existiert die Navigation
+nur an **einer** Stelle und bleibt über alle Seiten konsistent.
+
+Jede Seite setzt am `<body>`:
+
+```html
+<body data-page="<aktive-seite>" data-base="<''-für-Root | '../'-für-Unterordner>" data-year="2026">
+```
+
+- `data-page` steuert den aktiven Menüpunkt.
+- `data-base` ist der Pfad-Präfix, damit Links aus Unterordnern (`leistungen/`, `blog/`,
+  `portfolio/`) korrekt aufgelöst werden.
 
 ## Lokal starten
 
-Da es sich um statische Dateien handelt, genügt ein beliebiger Webserver:
+Da es sich um statische Dateien handelt, genügt ein einfacher Webserver:
 
 ```bash
 # Python
 python3 -m http.server 8000
-
-# oder Node
-npx serve .
+# danach: http://localhost:8000
 ```
 
-Anschließend `http://localhost:8000` im Browser öffnen.
+> Hinweis: Über einen Webserver öffnen (nicht per Doppelklick `file://`), damit
+> relative Pfade und das Karten-iframe sauber funktionieren.
 
-## Design-Tokens
+## Externe Abhängigkeiten (CDN)
 
-Farben, Typografie und Abstände sind als CSS-Variablen in `:root` (und
-`[data-theme="dark"]`) in `css/style.css` definiert.
+- **Google Fonts** – Poppins & Inter
+- **Lucide Icons** – `unpkg.com/lucide`
+- **GSAP** – optionale Hero-Animation (Seite funktioniert auch ohne)
+- **OpenStreetMap** – eingebettete Karte auf der Kontaktseite
 
-| Token | Wert |
-|-------|------|
-| Primary | `#2563EB` |
-| Secondary | `#06B6D4` |
-| Accent | `#38BDF8` |
-| Dark | `#0F172A` |
-| Background | `#F8FAFC` |
-| Text | `#111827` |
+## Anpassen
 
-**Schriften:** Poppins (Headlines) & Inter (Fließtext).
+Farben, Abstände, Radien und Schatten sind als CSS-Variablen in
+`assets/css/design-system.css` definiert und an einer Stelle änderbar.
+Die wichtigsten Inhalte (Telefon, E-Mail, Adresse, Leistungen) lassen sich in
+`assets/js/components.js` zentral pflegen.
 
 ---
 
-© Nexora Digital Solutions
+© 2026 Nexora Digital Solutions.
